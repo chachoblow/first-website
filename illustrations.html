@@ -5,38 +5,26 @@
       <title>wesley klein</title>
       <meta name="author" content="Wesley Klein">
       <meta name="desciption" content="Collection of Wesley Klein's illustrations.">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="static-sidebar.css">
+      <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Arimo|Dawning+of+a+New+Day|Lora|Ramaraja|Song+Myung" rel="stylesheet">
     </head>
 
     <body>
-      <header>
-        <h1>wesley klein</h1>
-      </header>
-      
       <main>
-        <section class="left">
-          <nav>
-            <ul>
-              <li><a href="index.html">home</a></li>
-              <li><a href="comics.html">comics</a></li>
-              <li><a class="active" href="illustrations.html">illustrations</a></li>
-              <li><a href="photo.html">photo</a></li>
-              <li><a href="blog.html">blog</a></li>
-              <li><a href="about-me.html">me</a></li>
-            </ul>
-          </nav>
-        </section>
-        
-        <section class="right">
-          <img src="images/self-portait/me-final.jpg" alt="Self-portait of Wesley Klein" class="responsive">
-          
-          <picture>
-            <source media="(max-height: 800)" srcset="images/self-portait/me-final-800h.jpg">
-            <source media="(max-height: 900)" srcset="images/self-portait/me-final-900h.jpg">
-            <source media="(max-height: 1080)" srcset="images/self-portait/me-final-1080h.jpg">
-            <img src="images/self-portait/me-final.jpg" alt="Self-portait of Wesley Klein">
-        </picture>
-        </section>
+        <div class="sidenav" id="menublock">
+          <a href="index.html" class="homepage-title">wesley klein</a>
+          <a href="comics.html" class="link-title">comics</a>
+          <a class="sub-title" href="cyclux.html">cyclux</a>
+          <a class="active link-title" href="illustrations.html">illustrations</a>
+          <a href="photo.html" class="link-title">photo</a>
+          <a href="blog.html" class="link-title">blog</a>
+          <a href="about-me.html" class="link-title">me</a>
+        </div>
+        <div id="carousel">
+          <div class="slide">
+             <img src="images/self-portait/me-final-900h.jpg">
+          </div>
+        </div>
       </main>
     </body>
 </html>

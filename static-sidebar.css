@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Arimo', sans-serif;
+  padding: 0;
+}
+
+/* Style images that are to be responsive. */
+.responsive {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+/* The sidebar menu */
+.sidenav {
+    width: 112px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0px; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px;
+}
+
+#menublock {
+  background-color: white;
+  height: 267px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding-top: 7px;
+  padding-left: 16px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.link-title {
+  font-size: 16px;
+}
+
+.homepage-title {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+.sub-title {
+  font-size: 14px;
+  margin-left: 12px;
+  font-style: italic;
+}
+
+.link-title.active {
+  font-size: 16px;
+  color: grey;
+}
+
+.homepage-title.active {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 25px;
+  color: black;
+}
+.sub-title.active {
+  font-size: 14px;
+  margin-left: 12px;
+  font-style: italic;
+  color: grey;
+}
+
+/* Style page content */
+.right {
+  margin-top: 50px;
+    margin-left: 150px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+#carousel {
+  margin-left: 200px;
+  width: 100%;
+  height: 610px;
+  background-color: white;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+header {
+  height: 0px;
+}
+
+
+#carousel .slide {
+  display: inline-block;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
