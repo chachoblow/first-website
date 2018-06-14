@@ -80,8 +80,8 @@ body {
 /* Style page content */
 .right {
   margin-top: 50px;
-    margin-left: 150px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+  margin-left: 150px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
 }
 
 #carousel {
@@ -102,8 +102,43 @@ header {
   display: inline-block;
 }
 
+.blogcontent {
+  width: 60%;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+.indexpage {
+  background-color: #ffbb99;
+}
+
+.indexpage.right {
+  color: white;
+  font-weight: bolder;
+}
+
+.indexfirst {
+  font-size: 125px;
+}
+
+.indexsecond {
+  font-size: 100px;
+}
+
+.indexsecond a {
+  text-decoration: none;
+  color: plum
+}
+
+.comicspage {
+  background-color: #ffe699;
+}
+
+.comicspage.right {
+  color: white;
+  font-weight: bolder;
 }
