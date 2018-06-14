@@ -135,10 +135,47 @@ header {
 }
 
 .comicspage {
-  background-color: #ffe699;
+  background-color: #36560A;
 }
 
 .comicspage.right {
   color: white;
   font-weight: bolder;
 }
+
+.comicsfirst {
+  font-size: 125px;
+}
+
+.comicssecond {
+  font-size: 100px;
+}
+
+.comicssecond a {
+  text-decoration: none;
+  color: #E4B22B;
+}
+
+.photopage {
+  background-color: #0C6F89;
+}
+
+.photopage.right {
+  color: white;
+  font-weight: bolder;
+}
+
+.photofirst {
+  font-size: 125px;
+}
+
+.photosecond {
+  font-size: 100px;
+}
+
+.photosecond a {
+  text-decoration: none;
+  color: #D99333;
+}
+
+
