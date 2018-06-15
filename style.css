@@ -76,62 +76,29 @@ body {
 
 /* Width of the blog content. */
 .blogpost {
-  margin-left: 40px;
-  width: 60%;
+  padding-left: 40px;
+  width: 75%;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:850px) {
   /* For mobile phones: */
   .sidenav {
-    display: none;
+    position: static;
+    width: 100%;
+    height: auto;
   }
   
   .content {
-    display: block;
-    margin-left: 0px;
-    margin-top: 0px;
-    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px
   }
   
   .responsive {
-    padding: 25px 10px 25px 10px;
+    padding: 30px 10px 30px 10px
   }
   
-  .top-nav-small {
+  .blogpost {
+    padding: 10px 10px 10px 10px;
     width: 100%;
-    height: auto;
-    display: block;
   }
-  
-  .nav-title-container {
-    float: left;
-    padding: 20px 1px 10px 20px;
-    width: 50%;
-  }
-  
-  .nav-small-container {
-    float: right;
-    display: block;
-    padding: 20px 20px 10px 1px;
-    width: 200px;
-  }
-  
-  .nav-small-container a, .dropdown-btn {
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: black;
-    padding: 7px 20px 7px 1px;
-    text-decoration: none;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .dropdown-container {
-    padding: 10px 1px 10px;
-  }
-  
 }
