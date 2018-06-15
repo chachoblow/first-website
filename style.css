@@ -8,13 +8,10 @@ body {
   margin: 0;
 }
 
+/* Main content of the page. */
 .content {
   margin-left: 250px;
   margin-top: 70px;
-}
-
-#title-image {
-  width: 200px;
 }
 
 /* The sidebar menu */
@@ -50,11 +47,19 @@ body {
   padding: 10px 1px 10px 15px;
 }
 
+.top-nav-small {
+  display: none;
+}
+
 .nav-title-container {
   padding-bottom: 40px;
   font-size: 26px;
   font-weight: bold;
   padding-bottom: 10px;
+}
+
+#title-image {
+  width: 200px;
 }
 
 .nav-option {
@@ -65,9 +70,7 @@ body {
   width:100%;
   max-width: 1000px;
   height: auto;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  padding-left: 50px;
+  padding: 30px 50px 30px 50px;
   display: block;
 }
 
@@ -77,18 +80,58 @@ body {
   width: 60%;
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:800px) {
   /* For mobile phones: */
   .sidenav {
-    width:100%;
+    display: none;
   }
+  
+  .content {
+    display: block;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+  }
+  
+  .responsive {
+    padding: 25px 10px 25px 10px;
+  }
+  
+  .top-nav-small {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .nav-title-container {
+    float: left;
+    padding: 20px 1px 10px 20px;
+    width: 50%;
+  }
+  
+  .nav-small-container {
+    float: right;
+    display: block;
+    padding: 20px 20px 10px 1px;
+    width: 200px;
+  }
+  
+  .nav-small-container a, .dropdown-btn {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: black;
+    padding: 7px 20px 7px 1px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .dropdown-container {
+    padding: 10px 1px 10px;
+  }
+  
 }
-
-/*
-@media screen and (max-width: 400px) {
-    ul.sidenav li a {
-        text-align: center;
-        float: none;
-    }
-}
-*/
