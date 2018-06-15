@@ -4,87 +4,71 @@
 
 /* Style the body */
 body {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   margin: 0;
 }
 
 .content {
-  margin-left: 112px;
+  margin-left: 250px;
+  margin-top: 70px;
+}
+
+#title-image {
+  width: 200px;
 }
 
 /* The sidebar menu */
 .sidenav {
-  width: 112px; /* Set the width of the sidebar */
+  width: 250px;
   height: 100%;
-  float: left;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
   background-color: white;
+  padding-top: 50px;
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav a, .dropdown-btn {
+  font-family: 'IBM Plex Sans', sans-serif;
   color: black;
-  padding-top: 7px;
-  padding-left: 16px;
+  padding: 7px 1px 7px 50px;
   text-decoration: none;
   display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
-.sidenav a:hover {
-  background-color: white;
-  color: grey;
+.dropdown-container {
+  display: none;
+  padding: 10px 1px 10px 15px;
 }
 
-/* The following six rules relate to the links in the navigation menu. */
-.nav-title-level-0 {
+.nav-title-container {
+  padding-bottom: 40px;
   font-size: 26px;
   font-weight: bold;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
-.nav-title-level-0.active {
-  font-size: 26px;
-  font-weight: bold;
-  padding-bottom: 25px;
-  color: black;
-}
-
-.nav-title-level-1 {
+.nav-option {
   font-size: 16px;
-}
-
-.nav-title-level-1.active {
-  font-size: 16px;
-  color: grey;
-}
-
-.nav-title-level-2 {
-  font-size: 14px;
-  margin-left: 12px;
-  font-style: italic;
-}
-
-.nav-title-level-2.active {
-  font-size: 14px;
-  margin-left: 12px;
-  font-style: italic;
-  color: grey;
 }
 
 .responsive {
+  width:100%;
   max-width: 1000px;
-  max-height: 1000px;
   height: auto;
-  width:auto;
   padding-bottom: 30px;
   padding-top: 30px;
+  padding-left: 50px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Width of the blog content. */
@@ -92,3 +76,19 @@ body {
   margin-left: 40px;
   width: 60%;
 }
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .sidenav {
+    width:100%;
+  }
+}
+
+/*
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+*/

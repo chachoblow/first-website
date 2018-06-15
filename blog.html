@@ -6,19 +6,23 @@
       <meta name="author" content="Wesley Klein">
       <meta name="desciption" content="Blog of Wesley Klein">
       <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
       <nav class="sidenav">
-        <a class="nav-title-level-0" href="index.html">wesley klein</a>
-        <a class="nav-title-level-1" href="comics.html">comics</a>
-        <a class="nav-title-level-2" href="cyclux.html">cyclux</a>
-        <a class="nav-title-level-1" href="illustrations.html">illustrations</a>
-        <a class="nav-title-level-1" href="photo.html">photo</a>
-        <a class="active nav-title-level-1" href="blog.html">blog</a>
-        <a class="nav-title-level-1" href="about-me.html">me</a>
+        <div class="nav-title-container">
+          <a href="index.html"><img id="title-image" src="images/my-eyes-name.png"></a>
+        </div>
+        <button class="dropdown-btn nav-option">comics</button>
+        <div class="dropdown-container">
+          <a class="nav-option" href="cyclux.html">cyclux</a>
+        </div>
+        <a class="nav-option" href="illustrations.html">illustrations</a>
+        <a class="nav-option" href="photo.html">photo</a>
+        <a class="nav-option" href="blog.html">blog</a>
+        <a class="nav-option" href="about-me.html">me</a>
       </nav>
         
       <main class="content">
@@ -29,5 +33,6 @@
           <p>I would like this to be up and running as soon as possible so that I can document the progress of my website. </p>
         </div>
       </main>
+      <script src="dropdown.js"></script>
     </body>
 </html>
