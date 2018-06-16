@@ -68,8 +68,8 @@ body {
 
 .responsive {
   width:100%;
-  max-width: 1000px;
   height: auto;
+  max-width: 1000px;
   padding: 30px 50px 30px 50px;
   display: block;
 }
