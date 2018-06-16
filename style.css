@@ -47,6 +47,10 @@ body {
   padding: 10px 1px 10px 15px;
 }
 
+.dropdown-container.clicked {
+  display: block;
+}
+
 .top-nav-small {
   display: none;
 }
