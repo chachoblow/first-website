@@ -84,6 +84,13 @@ body {
   width: 75%;
 }
 
+.icon-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 50px;
+}
+
 @media only screen and (max-width:850px) {
   /* For mobile phones: */
   .sidenav {
@@ -104,5 +111,10 @@ body {
   .blogpost {
     padding: 10px 10px 10px 10px;
     width: 100%;
+  }
+  
+  .icon-bar {
+    position: relative;
+    padding-bottom: 0px;
   }
 }
