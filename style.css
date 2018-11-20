@@ -71,8 +71,8 @@ body {
 }
 
 .responsive {
-  width:100%;
-  height: auto;
+  height:100%;
+  width: auto;
   max-width: 1000px;
   padding: 30px 50px 30px 50px;
   display: block;
@@ -98,21 +98,21 @@ body {
     width: 100%;
     height: auto;
   }
-  
+
   .content {
     margin: 0px 0px 0px 0px;
     padding: 10px 10px 10px 10px
   }
-  
+
   .responsive {
     padding: 10px 5px 10px 5px
   }
-  
+
   .blogpost {
     padding: 10px 10px 10px 10px;
     width: 100%;
   }
-  
+
   .icon-bar {
     position: relative;
     padding-bottom: 0px;
