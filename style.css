@@ -73,7 +73,6 @@ body {
 .responsive {
   height:75%;
   width: auto;
-  max-width: 1000px;
   padding: 30px 50px 30px 50px;
   display: block;
 }
