@@ -1,0 +1,112 @@
+html {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+/* NAVIGATION BAR ------------------------------------------ */
+
+nav {
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  opacity: .97;
+}
+
+nav ul {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav li:first-child {
+  margin-right: auto;
+  margin-left: 46px;
+}
+
+nav li:not(:first-child) {
+  font-size: 1.4em;
+  display: block;
+}
+
+nav li:not(:first-child):not(:last-child) {
+  margin-right: 34px;
+}
+
+nav li:last-child {
+  margin-right: 56px;
+}
+
+.nav-item:link {
+  text-decoration: none;
+  padding: 3px 3px 3px 3px;
+  color: black;
+}
+
+.nav-item:hover {
+  text-decoration: none;
+  background-color: lightgrey;
+  color: white;
+}
+
+.nav-item:active {
+  text-decoration: none;
+  background-color: lightgrey;
+  color: white;
+}
+
+.logo {
+  height: 64px;
+}
+
+/* MAIN CONTENT ------------------------------------------ */
+
+main {
+  height: 100%;
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+}
+
+.main-content-media {
+  float: left;
+  flex: 4;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+
+.main-content-info {
+  float: left;
+  flex: 1;
+  min-width: 250px;
+  height: 100%;
+  font-size: 1.4em;
+  overflow:auto;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+
+.responsive {
+  height: 100%;
+  max-height: 900px;
+  width: auto;
+  padding: 30px 50px 30px 50px;
+  display: block;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 1.5em;
+}
