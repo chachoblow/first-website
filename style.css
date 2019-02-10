@@ -193,6 +193,12 @@ body {
   padding-bottom: 50px;
 }
 
+#sketch-container {
+  margin: 0; 
+  margin-left: 250px; 
+  height: 99.5vh;
+}
+
 @media only screen and (max-width:850px) {
   /* For mobile phones: */
   .sidenav {
@@ -234,5 +240,10 @@ body {
   .icon-bar {
     position: relative;
     padding-bottom: 0px;
+  }
+
+  #sketch-container {
+    margin: 0;  
+    height: 99.5vh;
   }
 }
