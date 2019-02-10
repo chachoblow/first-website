@@ -11,7 +11,7 @@ body {
 
 /* Main content of the page. */
 .content {
-  margin-left: 350px;
+  margin-left: 250px;
   margin-top: 50px;
   margin-right: 10em;
 }
@@ -39,7 +39,7 @@ body {
 
 /* The sidebar menu */
 .sidenav {
-  width: 300px;
+  width: 250px;
   height: 100%;
   position: fixed;
   z-index: 1;
