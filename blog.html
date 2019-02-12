@@ -2,149 +2,95 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="images/eyes-icon.ico" type="image/x-icon">
-      <title>wesley klein - blog</title>
-      <meta name="author" content="Wesley Klein">
-      <meta name="desciption" content="Blog of Wesley Klein">
-      <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    <title>wesley klein</title>
+    <meta name="author" content="Wesley Klein">
+    <meta name="desciption" content="The personal website of Wesley Klein.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-    <body>
+  <body style="overflow-x: hidden; overflow-y: scroll !important; width: 100vw; white-space: normal; height: 100vh;">
+    <div class="sidenav-wrapper">
+      <a class="nav-option title" href="index.html">Wesley<br/>Klein</a>
       <nav class="sidenav">
-        <div class="nav-title-container">
-          <a href="index.html"><img id="title-image" src="images/my-eyes-name.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
-        </div>
-        <div class="nav-main-container">
-          <button class="dropdown-btn nav-option" style="letter-spacing: 0.95em;">artwork</button>
+        <button class="dropdown-btn nav-option">artwork</button>
+        <div class="dropdown-container clicked">
+          <button class="dropdown-btn nav-option">comics</button>
           <div class="dropdown-container">
-            <button class="dropdown-btn nav-option" style="letter-spacing: 0.845em;">comics</button>
-            <div class="dropdown-container">
-              <a class="nav-option" href="artwork/cyclux.html" style="letter-spacing: 0.55em;">cyclux</a>
-              <a class="nav-option" href="artwork/branches.html" style="letter-spacing: 0.2em;">branches</a>
-            </div>
-            <a class="nav-option" href="artwork/illustrations.html" style="letter-spacing: 0.195em;">illustrations</a>
-            <a class="nav-option" href="artwork/animations.html" style="letter-spacing: 0.274em;">animations</a>
-            <a class="nav-option" href="artwork/photo.html" style="letter-spacing: 1.2em;">photo</a>
+            <a class="nav-option" href="artwork/cyclux.html">cyclux</a>
+            <a class="nav-option" href="artwork/branches.html">branches</a>
           </div>
-          <button class="dropdown-btn nav-option" style="letter-spacing: 0.785em;">projects</button>
-          <div class="dropdown-container">
-            <a class="nav-option" href="projects/linecollection.html" style="letter-spacing: 0.09em;">line collection</a>
-            <a class="nav-option" href="projects/lifesimulator.html" style="letter-spacing: 0.115em;">life simulator</a>
-            <a class="nav-option" href="projects/processing-sketches.html" style="letter-spacing: -0.105em;">processing sketches</a>
-          </div>
-          <a class="nav-option" href="#" style="letter-spacing: 2.362em;">blog</a>
-          <a class="nav-option" href="about-me.html" style="letter-spacing: 1.59em;">about</a>
+          <a class="nav-option" href="artwork/illustrations.html">illustrations</a>
+          <a class="nav-option" href="artwork/animations">animations</a>
+          <a class="nav-option" href="artwork/photo.html">photo</a>
         </div>
+        <button class="dropdown-btn nav-option">projects</button>
+        <div class="dropdown-container">
+          <a class="nav-option" href="projects/linecollection.html">line collection</a>
+          <a class="nav-option" href="projects/lifesimulator.html">life simulator</a>
+          <a class="nav-option" href="projects/processing-sketches.html">processing sketches</a>
+        </div>
+        <a class="nav-option" href="blog.html">blog</a>
+        <a class="nav-option" href="about-me.html">about</a>
       </nav>
+      <a href="index.html"><img id="title-image" src="images/my-eyes-name-clear.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
+    </div>
 
-      <nav class="topnav" id="myTopnav">
-        <a href="../index.html" class="logo"><img id="title-image" src="../images/my-eyes-name.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
-        <div class="nav-main-container">
-          <button class="dropdown-btn nav-option" style="letter-spacing: 0.95em;">artwork</button>
+    <div class="topnav-wrapper">
+      <nav class="topnav">
+        <a href="index.html"><img id="title-image" src="images/my-eyes-name-clear.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
+        <button class="dropdown-btn nav-option"><i class="fa fa-bars"></i></button>
+        <div class="dropdown-container main-dropdown">
+          <button class="dropdown-btn nav-option">artwork</button>
           <div class="dropdown-container clicked">
-            <button class="dropdown-btn nav-option" style="letter-spacing: 0.845em;">comics</button>
+            <button class="dropdown-btn nav-option">comics</button>
             <div class="dropdown-container">
-              <a class="nav-option" href="cyclux.html" style="letter-spacing: 0.55em;">cyclux</a>
-              <a class="nav-option" href="branches.html" style="letter-spacing: 0.2em;">branches</a>
+              <a class="nav-option" href="artwork/cyclux.html">cyclux</a>
+              <a class="nav-option" href="artwork/branches.html">branches</a>
             </div>
-            <a class="nav-option active" href="#" style="letter-spacing: 0.195em;">illustrations</a>
-            <a class="nav-option" href="animations.html" style="letter-spacing: 0.274em;">animations</a>
-            <a class="nav-option" href="photo.html" style="letter-spacing: 1.2em;">photo</a>
+            <a class="nav-option" href="artwork/illustrations.html">illustrations</a>
+            <a class="nav-option" href="artwork/animations.html">animations</a>
+            <a class="nav-option" href="artwork/photo.html">photo</a>
           </div>
-          <button class="dropdown-btn nav-option" style="letter-spacing: 0.785em;">projects</button>
+          <button class="dropdown-btn nav-option">projects</button>
           <div class="dropdown-container">
-            <a class="nav-option" href="../projects/linecollection.html" style="letter-spacing: 0.09em;">line collection</a>
-            <a class="nav-option" href="../projects/lifesimulator.html" style="letter-spacing: 0.115em;">life simulator</a>
-            <a class="nav-option" href="../projects/processing-sketches.html" style="letter-spacing: -0.105em;">processing sketches</a>
+            <a class="nav-option" href="projects/linecollection.html">line<br/>collection</a>
+            <a class="nav-option" href="projects/lifesimulator.html">life<br/>simulator</a>
+            <a class="nav-option" href="projects/processing-sketches.html">processing<br/>sketches</a>
           </div>
-          <a class="nav-option" href="../blog.html" style="letter-spacing: 2.362em;">blog</a>
-          <a class="nav-option" href="../about-me.html" style="letter-spacing: 1.59em;">about</a>
+          <a class="nav-option" href="blog.html">blog</a>
+          <a class="nav-option" href="about-me.html">about</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
       </nav>
+    </div>
 
-      <nav class="topnav" id="myTopnav">
-        <a href="../index.html" class="logo"><img id="title-image" src="../images/my-eyes-name.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
-        <div class="nav-main-container">
-          <button class="dropdown-btn nav-option" style="letter-spacing: 0.95em;">artwork</button>
-          <div class="dropdown-container">
-            <button class="dropdown-btn nav-option" style="letter-spacing: 0.845em;">comics</button>
-            <div class="dropdown-container">
-              <a class="nav-option" href="cyclux.html" style="letter-spacing: 0.55em;">cyclux</a>
-              <a class="nav-option" href="branches.html" style="letter-spacing: 0.2em;">branches</a>
-            </div>
-            <a class="nav-option" href="#" style="letter-spacing: 0.195em;">illustrations</a>
-            <a class="nav-option" href="animations.html" style="letter-spacing: 0.274em;">animations</a>
-            <a class="nav-option" href="photo.html" style="letter-spacing: 1.2em;">photo</a>
-          </div>
-          <button class="dropdown-btn nav-option" style="letter-spacing: 0.785em;">projects</button>
-          <div class="dropdown-container">
-            <a class="nav-option" href="../projects/linecollection.html" style="letter-spacing: 0.09em;">line collection</a>
-            <a class="nav-option" href="../projects/lifesimulator.html" style="letter-spacing: 0.115em;">life simulator</a>
-            <a class="nav-option" href="../projects/processing-sketches.html" style="letter-spacing: -0.105em;">processing sketches</a>
-          </div>
-          <a class="nav-option active" href="../blog.html" style="letter-spacing: 2.362em;">blog</a>
-          <a class="nav-option" href="../about-me.html" style="letter-spacing: 1.59em;">about</a>
+    <main role="main">
+      <div class="blog-container">
+        <div class="blog-entry">
+          <h1>This Is My Fist Blog Entry</h1>
+          <h2>February 12, 2018</h2>
+          <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p>
+          <img class="blog-image" src="../images/photographs/brittany-driving-1000h.JPG" 
+               alt="Photograph of a woman driving on a highway.">
+          <p>Before you can begin to determine what the composition of a particular paragraph will be, you must first decide on an argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to your reader? The information in each paragraph must be related to that idea. In other words, your paragraphs should remind your reader that there is a recurrent relationship between your thesis and the information in each paragraph. A working thesis functions like a seed from which your paper, and your ideas, will grow. The whole process is an organic one—a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas in the paper.</p>
+          <p>The decision about what to put into your paragraphs begins with the germination of a seed of ideas; this “germination process” is better known as brainstorming. There are many techniques for brainstorming; whichever one you choose, this stage of paragraph development cannot be skipped. Building paragraphs can be like building a skyscraper: there must be a well-planned foundation that supports what you are building. Any cracks, inconsistencies, or other corruptions of the foundation can cause your whole paper to crumble.</p>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-        
-      <main class="content">
-        <div class="blogpost">
-          <h1>Under construction</h1>
-          <p>Coming soon.</p>
-          <!--
-          <h1>Goals Moving Forward</h1>
-          <h2>February 8, 2018</h2>
-          <p>It always amazes me how much sound we tune out. Actually, not even tune out since tuning out 
-            requires an initial acknowledgment. Much of the sounds wouldn’t have ever existed for me if I 
-            were not purposefully listening for them. We do this with all of our senses, but for me, it 
-            seems to happen most with sound. 
-          </p>
-          <p>It was also hard to listen without attaching meaning to what I was hearing. For instance, if 
-            I heard the screeching of masking tape being unrolled, I immediately considered how someone 
-            was packing up something. Or if I heard the rustle of leaves, I thought how they must have 
-            fallen off of a tree, and were now skipping across the ground. Everything I heard was 
-            immediately categorized, given a name, and then rather than considering the sound itself, I 
-            considered what was making that sound.
-          </p>
-          <p>It was hard to get to a point were I simply took in the sounds and let them speak for 
-            themselves. In fact, I don’t think I ever truly did that. I think that it would be really 
-            interesting to get to a point where you were able to take in sound as a pure form, but also
-            unsettling in a way. 
-          </p>
+        <div class="blog-entry">
+          <h1>This Is My Second Blog Entry</h1>
+          <h2>February 12, 2018</h2>
+          <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p>
+          <img class="blog-image" src="../images/photographs/brittany-driving-1000h.JPG" 
+                alt="Photograph of a woman driving on a highway.">
+          <p>Before you can begin to determine what the composition of a particular paragraph will be, you must first decide on an argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to your reader? The information in each paragraph must be related to that idea. In other words, your paragraphs should remind your reader that there is a recurrent relationship between your thesis and the information in each paragraph. A working thesis functions like a seed from which your paper, and your ideas, will grow. The whole process is an organic one—a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas in the paper.</p>
+          <p>The decision about what to put into your paragraphs begins with the germination of a seed of ideas; this “germination process” is better known as brainstorming. There are many techniques for brainstorming; whichever one you choose, this stage of paragraph development cannot be skipped. Building paragraphs can be like building a skyscraper: there must be a well-planned foundation that supports what you are building. Any cracks, inconsistencies, or other corruptions of the foundation can cause your whole paper to crumble.</p>
         </div>
-        <div class="blogpost">
-          <h1>Goals Moving Forward</h1>
-          <h2>February 8, 2018</h2>
-          <p>It always amazes me how much sound we tune out. Actually, not even tune out since tuning out 
-            requires an initial acknowledgment. Much of the sounds wouldn’t have ever existed for me if I 
-            were not purposefully listening for them. We do this with all of our senses, but for me, it 
-            seems to happen most with sound. 
-          </p>
-          <p>It was also hard to listen without attaching meaning to what I was hearing. For instance, if 
-            I heard the screeching of masking tape being unrolled, I immediately considered how someone 
-            was packing up something. Or if I heard the rustle of leaves, I thought how they must have 
-            fallen off of a tree, and were now skipping across the ground. Everything I heard was 
-            immediately categorized, given a name, and then rather than considering the sound itself, I 
-            considered what was making that sound.
-          </p>
-          <img class="responsive" src="../images/photographs/brittany-driving-1000h.JPG" alt="Photograph of a woman driving on a highway.">
-          <p>It was hard to get to a point were I simply took in the sounds and let them speak for 
-            themselves. In fact, I don’t think I ever truly did that. I think that it would be really 
-            interesting to get to a point where you were able to take in sound as a pure form, but also
-            unsettling in a way. 
-          </p>
-          --->
-        </div>
-      </main>
-      <script src="js/dropdown.js"></script>
-      <script src="js/mobile-menu.js"></script>
-    </body>
+      </div>
+    </main>
+  </body>
+
+  <script src="js/dropdown.js"></script>
+
 </html>
+

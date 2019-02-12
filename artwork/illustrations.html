@@ -7,59 +7,85 @@
     <meta name="desciption" content="The personal website of Wesley Klein.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <div class="page-wrapper">
-      <nav role="navigation">
-        <ul>
-          <li>
-              <a href="#"><img id="logo" src="../images/my-eyes-name.png" alt="The website logo."></a>
-          </li>
-          <div class="nav-options">
-            <li>
-              <a href="../index.html" class="nav-option">projects</a>
-            </li>
-            <li>
-              <a href="#" class="nav-option active">artwork</a>
-            </li>
-            <li>
-              <a href="#" class="nav-option">about</a>
-            </li>
-            <li>
-              <a href="#" class="nav-option">blog</a>
-            </li>
+    <div class="sidenav-wrapper">
+      <a class="nav-option title" href="../index.html">Wesley<br/>Klein</a>
+      <nav class="sidenav">
+        <button class="dropdown-btn nav-option">artwork</button>
+        <div class="dropdown-container clicked">
+          <button class="dropdown-btn nav-option">comics</button>
+          <div class="dropdown-container">
+            <a class="nav-option" href="cyclux.html">cyclux</a>
+            <a class="nav-option" href="branches.html">branches</a>
           </div>
-        </ul>
+          <a class="nav-option" href="illustrations.html">illustrations</a>
+          <a class="nav-option" href="animations.html">animations</a>
+          <a class="nav-option" href="photo.html">photo</a>
+        </div>
+        <button class="dropdown-btn nav-option">projects</button>
+        <div class="dropdown-container">
+          <a class="nav-option" href="../projects/linecollection.html">line<br/>collection</a>
+          <a class="nav-option" href="../projects/lifesimulator.html">life<br/>simulator</a>
+          <a class="nav-option" href="../projects/processing-sketches.html">processing<br/>sketches</a>
+        </div>
+        <a class="nav-option" href="../blog.html">blog</a>
+        <a class="nav-option" href="../about-me.html">about</a>
       </nav>
-
-      <main role="main">
-        <div class="main-content">
-          <img class="responsive-image" src="../images/illustrations/can-you-hear-me-1800h.jpg"  
-                alt="Illustration of a man with a headset and the phrases 'Can you hear me?' and 'Can I hear me?'">
-          <img class="responsive-image" src="../images/illustrations/fried-1381h.jpg" 
-                alt="Illustration of an older man taking a selfie.">
-          <img class="responsive-image" src="../images/illustrations/breaking-bad-1500h.jpg" 
-                alt="Illustration of a face with two men in jumpsuits next to him.">
-          <img class="responsive-image" src="../images/illustrations/bat-person-1080h.png" 
-                alt="Illustration of a woman holding a bat in a desert.">
-          <img class="responsive-image" src="../images/illustrations/yellow-vision-1800h.jpg" 
-                alt="Illustration of a man standing on a square landscape with yellow rays coming out of his eyes.">
-          <img class="responsive-image" src="../images/illustrations/man-rock-900h.png" 
-                alt="Illustration of a man merging with a rock.">
-          <img class="responsive-image" src="../images/illustrations/woman-cursive-900h.png" 
-                alt="Illustration of a woman with a necklace.">
-          <img class="responsive-image" src="../images/illustrations/me-final-1080h.jpg" 
-                alt="Illustration of Wesley Klein.">
-        </div>
-
-        <div class="main-info">
-          <!-- Empty -->
-        </div>
-      </main>
+      <a href="../index.html"><img id="title-image" src="../images/my-eyes-name-clear.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
     </div>
 
+    <div class="topnav-wrapper">
+      <nav class="topnav">
+        <a href="../index.html"><img id="title-image" src="../images/my-eyes-name-clear.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
+        <button class="dropdown-btn nav-option"><i class="fa fa-bars"></i></button>
+        <div class="dropdown-container main-dropdown">
+          <button class="dropdown-btn nav-option">artwork</button>
+          <div class="dropdown-container clicked">
+            <button class="dropdown-btn nav-option">comics</button>
+            <div class="dropdown-container">
+              <a class="nav-option" href="cyclux.html">cyclux</a>
+              <a class="nav-option" href="branches.html">branches</a>
+            </div>
+            <a class="nav-option" href="illustrations.html">illustrations</a>
+            <a class="nav-option" href="animations.html">animations</a>
+            <a class="nav-option" href="photo.html">photo</a>
+          </div>
+          <button class="dropdown-btn nav-option">projects</button>
+          <div class="dropdown-container">
+            <a class="nav-option" href="../projects/linecollection.html">line collection</a>
+            <a class="nav-option" href="../projects/lifesimulator.html">life simulator</a>
+            <a class="nav-option" href="../projects/processing-sketches.html">processing sketches</a>
+          </div>
+          <a class="nav-option" href="../blog.html">blog</a>
+          <a class="nav-option" href="../about-me.html">about</a>
+        </div>
+      </nav>
+    </div>
+
+    <main role="main">
+      <img class="responsive-image" src="../images/illustrations/can-you-hear-me-1800h.jpg"  
+          alt="Illustration of a man with a headset and the phrases 'Can you hear me?' and 'Can I hear me?'">
+      <img class="responsive-image" src="../images/illustrations/fried-1381h.jpg" 
+            alt="Illustration of an older man taking a selfie.">
+      <img class="responsive-image" src="../images/illustrations/breaking-bad-1500h.jpg" 
+            alt="Illustration of a face with two men in jumpsuits next to him.">
+      <img class="responsive-image" src="../images/illustrations/bat-person-1080h.png" 
+            alt="Illustration of a woman holding a bat in a desert.">
+      <img class="responsive-image" src="../images/illustrations/yellow-vision-1800h.jpg" 
+            alt="Illustration of a man standing on a square landscape with yellow rays coming out of his eyes.">
+      <img class="responsive-image" src="../images/illustrations/man-rock-900h.png" 
+            alt="Illustration of a man merging with a rock.">
+      <img class="responsive-image" src="../images/illustrations/woman-cursive-900h.png" 
+            alt="Illustration of a woman with a necklace.">
+      <img class="responsive-image" src="../images/illustrations/me-final-1080h.jpg" 
+            alt="Illustration of Wesley Klein.">
+    </main>
   </body>
+
+  <script src="../js/dropdown.js"></script>
+
 </html>
