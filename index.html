@@ -1,47 +1,50 @@
 <!DOCTYPE html>
-<html class="indexpage" lang="en-US">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="images/eyes-icon.ico" type="image/x-icon">
     <title>wesley klein</title>
-      <meta name="author" content="Wesley Klein">
-      <meta name="desciption" content="The website of Wesley Klein. Here, his various projects, illustrations, comics, and photographs are hosted for your viewing pleasure.">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
-    </head>
+    <meta name="author" content="Wesley Klein">
+    <meta name="desciption" content="The personal website of Wesley Klein.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
 
-    <body>
-      <nav class="sidenav">
-        <div class="nav-title-container">
-          <a href="index.html"><img id="title-image" src="images/my-eyes-name.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
-        </div>
-        <div class="nav-main-container">
-          <button class="dropdown-btn nav-option" style="letter-spacing: 0.95em;">artwork</button>
-          <div class="dropdown-container">
-            <button class="dropdown-btn nav-option" style="letter-spacing: 0.845em;">comics</button>
-            <div class="dropdown-container">
-              <a class="nav-option" href="artwork/cyclux.html" style="letter-spacing: 0.55em;">cyclux</a>
-              <a class="nav-option" href="artwork/branches.html" style="letter-spacing: 0.2em;">branches</a>
-            </div>
-            <a class="nav-option" href="artwork/illustrations.html" style="letter-spacing: 0.195em;">illustrations</a>
-            <a class="nav-option" href="artwork/animations.html" style="letter-spacing: 0.274em;">animations</a>
-            <a class="nav-option" href="artwork/photo.html" style="letter-spacing: 1.2em;">photo</a>
-          </div>
-          <button class="dropdown-btn nav-option" style="letter-spacing: 0.785em;">projects</button>
-          <div class="dropdown-container">
-            <a class="nav-option" href="projects/linecollection.html" style="letter-spacing: 0.09em;">line collection</a>
-            <a class="nav-option" href="projects/lifesimulator.html" style="letter-spacing: 0.115em;">life simulator</a>
-            <a class="nav-option" href="projects/processing-sketches.html" style="letter-spacing: -0.105em;">processing sketches</a>
-          </div>
-          <a class="nav-option" href="blog.html" style="letter-spacing: 2.362em;">blog</a>
-          <a class="nav-option" href="about-me.html" style="letter-spacing: 1.59em;">about</a>
-        </div>
-      </nav>
+  <body>
+    <nav role="navigation">
+      <a href="#"><img id="logo" src="../images/my-eyes-name-clear.png" alt="The website logo."></a>
+      <div class="nav-options">
+        <ul>  
+          <li>
+            <a href="../index.html" class="nav-option">Projects</a>
+          </li>
+          <li>
+            <a href="#" class="nav-option">Artwork</a>
+          </li>
+          <li>
+            <a href="#" class="nav-option">About</a>
+          </li>
+          <li>
+            <a href="#" class="nav-option">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <main class="content" id="sketch-container">
-        <iframe src="https://editor.p5js.org/chachoblow/embed/AEuGouJYL" style="width: 100%; height: 100%; border-style: none;"></iframe>
-      </main>
-      <script src="js/dropdown.js"></script>
-    </body>
+    <main role="main">
+      <div class="section-container">
+          <img class="responsive-image" src="../images/illustrations/can-you-hear-me-1800h.jpg"  
+               alt="Illustration of a man with a headset and the phrases 'Can you hear me?' and 'Can I hear me?'">
+        <a href="#" class="section-title">Illustrations</a>
+      </div>
+      <!--
+      <div class="sketch-wrapper">
+        <iframe src="https://editor.p5js.org/chachoblow/embed/Yu_vewKzb" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+      -->
+    </main>
+
+  </body>
+  <script src="js/mobile-menu.js"></script>
 </html>
