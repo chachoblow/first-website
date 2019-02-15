@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body>
+  <body class="scroll-vertical">
     <div class="sidenav-wrapper">
       <a class="nav-option title" href="../index.html">Wesley<br/>Klein</a>
       <nav class="sidenav">
@@ -70,8 +70,17 @@
     </div>
 
     <main role="main">
-      <div class="sketch-container">
-        <iframe src="https://editor.p5js.org/chachoblow/embed/HJO5SW4hX" frameborder="0"></iframe>
+      <div class="project-container">
+        <h1>Virtual Fixtures</h1>
+        <p>Virtual Fixtures is a roguelike cave exploration game developed in Java. The game was inspired by the graphic novel series <a href="https://en.wikipedia.org/wiki/East_of_West" title="Wikipedia entry for East of West" target="_blank">East of West</a>.</p>
+        <p>In Virtual Fixtures, you are trapped in a cave with your Buddy - a hovering AI bot which can project the virtual world for you. You need this projection in order to see where hidden energies are. The downside is that when in the virtual world, you cannot see the numreous traps that riddle the cave in the physical world. Therefore, you must switch back and forth between the two worlds - using one world to find the energies, and the other to avoid traps.</p>
+        <p>When you start the game, you are placed in the middle of a procedurally generated cave system. You can see this below. Note that the HUD displays what your cursor is currently hovering over.</p>
+        <img class="project-media" src="../images/virtual-fixtures/game-hud.gif" alt="Gif of the HUD for Virtual Fixtures" title="HUD for Virtual Fixtures">
+        <p>A main feature that I implemented for this game was ray-casting. You can only see parts of the cave that are within your current line of sight (or parts that you have seen in the past). In order to do this, I used <a href="https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm" title="Wikipedia entry for Bresenham's line algorithm" target="_blank">Bresenham's line algorithm</a>. This can be seen below.</p>
+        <img class="project-media" src="../images/virtual-fixtures/game-ray-casting.gif" alt="Gif of ray casting in Virtual Fixtures" title="Ray casting for Virtual Fixtures">
+        <p>The main feature of the game is that you can switch between the physical and virtual worlds. In doing this, you can avoid traps while also searching for energies. Another caveat is that when in the virtual world, you can no longer see remembered parts of the cave. You are limited to what is currently in view only.</p>
+        <img class="project-media" src="../images/virtual-fixtures/game-switch-worlds.gif" alt="Gif of switching worlds in Virtual Fixtures" title="World switching in Virtual Fixtures">
+        <p>If you would like to see a more in-depth explanation of the game, please watch <a href="https://youtu.be/C-yfkUNuN_M" title="YouTube link to game walkthrough" target="_blank">my video on YouTube</a>.</p>
       </div>
     </main>
   </body>
