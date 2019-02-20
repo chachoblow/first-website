@@ -145,7 +145,7 @@ a #title-image {
 
 .sketch-container {
   display: inline-block;
-  padding: 4em 2em 4em 2em;
+  padding: 0;
   width: 80vw;
   height: 100vh;
   overflow: hidden;
@@ -243,6 +243,29 @@ a #title-image {
 
 .about-content h1 {
   margin-top: 0;
+}
+
+.sketch-widget {
+  width: 320px;
+  height: 340px;
+  padding: 10px;
+  box-shadow: 7px 7px 10px grey;
+  background-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  color: blue;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-size: 1.4em;
+  z-index: 0;
+}
+
+.top {z-index: 2; position: relative}
+.bottom {z-index: 1; position: relative}
+
+.sketch-widget>iframe {
+  position: relative;
+  left: -10px;
 }
 
 
