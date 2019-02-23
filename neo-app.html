@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NEO API example</title>
+    <link href="neo-style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="main-heading">
+      <h1>NEO Search</h1>
+      <h2>Select a date to see all near-Earth objects on that day.</h2>
+
+      <form>
+        <p>
+          <label for="search-date">Select a search date: </label>
+          <input type="date" id="search-date" class="search-date" pattern="[0-9]{8}">
+        </p>
+        <p>
+          <button id="submit" class="submit">Submit search</button>
+        </p>
+      </form>
+    </div>
+
+    <div id="content-container">
+      <p class="main-info">A near-Earth object (NEO) is an asteroid or coment whose orbit brings it close to Earth. There are over 19,000 known near-Earth asteroids (NEAs), over a hundred short-period near-Earth comets (NECs),[1] and a number of solar-orbiting spacecraft and meteoroids large enough to be tracked in space before striking the Earth. It is now widely accepted that collisions in the past have had a significant role in shaping the geological and biological history of the Earth.[4] NEOs have become of increased interest since the 1980s because of greater awareness of the potential danger some of the asteroids or comets pose. When impacting the Earth, asteroids as small as 20 m cause sufficiently strong shock waves and heat to damage the local environment and populations.[5] Larger asteroids penetrate the atmosphere to the surface of the Earth, producing craters if they hit ground and tsunamis if water bodies are hit. It is in principle possible to deflect asteroids, and methods of mitigation are being researched.[6]</p>
+
+      <p class="main-info">Based on the orbit calculations of identified NEOs, their risk of future impact is assessed on two scales, the Torino scale and the more complex Palermo scale, both of which rate a risk of any significance with values above 0. Some NEOs have had temporarily positive Torino or Palermo scale ratings after their discovery, but as of March 2018, more precise calculations based on subsequent observations led to a reduction of the rating to or below 0 in all cases.[7]</p>
+          
+      <p class="main-info">Since 1998, the United States, the European Union, and other nations are scanning for NEOs in an effort called Spaceguard.[8] The initial US Congress mandate to NASA of cataloging at least 90% of NEOs that are at least 1 kilometre (0.62 mi) in diameter, which would cause a global catastrophe in case of an impact with Earth, had been met by 2011.[9] In later years, the survey effort has been expanded[10] to objects as small as about 140 m (460 ft) across,[11] which still have the potential for large-scale, though not global, damage.</p>
+          
+      <p class="main-info">Due to their Earth-like orbits and low surface gravity, NEOs are easy targets for spacecraft.[12][13] As of August 2018, five near-Earth comets[14][15][16] and three near-Earth asteroids have been visited by spacecraft,[17][18][19] and probes are en route to two more NEAs.[20][21] Plans to mine NEAs commercially have been drafted by private companies.</p>
+    </div>
+  
+    <div id="results" class="results">
+      <section>
+      </section>
+    </div>
+
+    <script src="js/get-neo.js"></script>
+    <script src="js/fade.js"></script>
+  </body>
+</html>
