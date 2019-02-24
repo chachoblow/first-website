@@ -1,6 +1,11 @@
 $.fn.strech_text = function(){
   var elmt          = jQuery(this),
       cont_width    = elmt.height();
+
+  //if ($( window ).width() < 850) {
+  //    cont_width = elmt.width();
+  //    console.log(elmt.width());
+  //}
       
   if(jQuery(this).find('.stretch_it').length > 0){
       var txt           = jQuery(this).find('.stretch_it').html();
@@ -16,12 +21,16 @@ $.fn.strech_text = function(){
   
   elmt.html(one_line);
   txt_width = one_line.height();
+  //if ($( window ).width() < 850) {
+  //    txt_width = one_line.width();
+  //}
   
   if (txt_width < cont_width){
       var  char_width     = txt_width/nb_char,
            ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ; 
 
       one_line.css({'letter-spacing': ltr_spacing});
+      console.log(ltr_spacing);
   } else {
       one_line.contents().unwrap();
       elmt.addClass('justify');

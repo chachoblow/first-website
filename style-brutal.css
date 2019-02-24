@@ -8,41 +8,43 @@ html, body {
 }
 
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+  /*font-family: 'Roboto Mono', monospace;*/
+  font-family: 'Roboto', sans-serif;
   font-size: 10px;
+}
+
+body{
+  background-image: none;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a.nav-option, a.content-option{
   text-decoration: none;
-  color: blue;
+  color: black;
   background-color: none;
-  font-weight: 300;
 }
 
 a.nav-option:hover, a.content-option:hover {
-  color: blue;
-  background-color: yellow;
+  color: white;
+  background-color: blue;
 }
 
 header .nav-option {
-  font-size: 2em;
   position: fixed;
-  top: 3em;
-  right: 3em;
+  top: 2em;
+  right: 2em;
+  font-size: 3em;
+  color: blue;
 }
 
 #title-image {
-  height: 7em;
+  height: 15em;
   position: fixed;
   bottom: 4em;
   right: 4em;
-}
-
-main {
-  margin-left: 20em;
-  margin-top: 2em;
-  display: flex;
-  flex-direction: column;
 }
 
 .vertical-menu-info {
@@ -54,116 +56,226 @@ main {
   transform: rotate(180deg);
   position: fixed;
   top: 0;
-  left: -6em;
+  left: 0;
   height: 100vh;
-  padding: 2em 1em 2em 5em;
+  width: 18.5em;
+  padding: 1em .5em 1em 0em;
+  color: blue;
 }
 .stretch_it{ white-space: nowrap; }
 .justify{ text-align:justify; }
 
 .vertical-menu-info h1 {
-  font-size: 8em;
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
-  font-weight: 400;
-  padding-left: 0.1em;
+  font-weight: 500;
+  padding-left: 0.2em;
+  font-size: 8em;
 }
 
 .vertical-menu-info h2 {
-  font-size: 2em;
   margin: 0em 0 0em 0;
-  font-weight: 300;
   padding-right: 0.3em;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+main {
+  margin-left: 20.5em;
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul {
   list-style: none;
+  margin: 2em 0 0 2em;
   padding: 0;
-  margin: 0em 0 2em 0;
-  font-size: 3em;
+}
+
+nav li.nav-heading {
+  padding: 0.5em 0 0.5em 0;
+  text-decoration: underline;
 }
 
 nav li {
-  padding: 0.5em 0 0.5em 0;
+  padding: 2em 0 2em 0;
 }
 
 .contact-info {
-  margin: 0;
+  margin: 13em 0 5em 2em;
+  padding: 0;
   display: block;
 }
 
 .contact-info h1 {
-  font-size: 2em;
-  font-weight: 300;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+
 }
 
 .contact-info ul {
   list-style: none;
-  padding:0;
-  font-size: 1.8em;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-info li {
-  padding: 0.2em 0 0.2em 0;
+  padding: 0.25em 0 0.25em 0;
+  margin: 0;
+}
+
+.nav-heading {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 6em;
+}
+
+.nav-option {
+  font-size: 5.5em;
+}
+
+.contact-info h1 {
+  font-size: 5em;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+
+.contact-info li { 
+  font-size: 4em;
+  font-weight: 200;
 }
 
 a>div {
   display: none;
 }
 
-a:hover>div {
-  display: block;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
-}
+/* Mobile/Tablet -----------------------------------------------------------------------*/
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+@media screen and (max-width: 850px) {
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+  a.nav-option, a.content-option{
+    text-decoration: none;
+    color: black;
+    background-color: none;
+  }
+  
+  a.nav-option:hover, a.content-option:hover {
+    color: black;
+    background-color: none;
+  }
+  
+  header .nav-option {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    font-size: 2em;
+    color: blue;
+  }
+  
+  #title-image {
+    height: 7em;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+  }
+  
+  .vertical-menu-info {
+    writing-mode:vertical-rl;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform: rotate(180deg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 10em;
+    padding: 0.5em 0.1em 0.5em 0em;
+    color: blue;
+  }
+  .stretch_it{ white-space: nowrap; }
+  .justify{ text-align:justify; }
+  
+  .vertical-menu-info h1 {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    font-weight: 500;
+    padding-left: 0.1em;
+    font-size: 5em;
+  }
+  
+  .vertical-menu-info h2 {
+    margin: 0em 0 0em 0;
+    padding-right: 0.1em;
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+  
+  main {
+    margin-left: 9.5em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0em 0 0 2em;
+    padding: 0;
+  }
+  
+  nav li.nav-heading {
+    padding: 0.5em 0 0.5em 0;
+    text-decoration: underline;
+  }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-.nav-image-container {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: auto;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.nav-image {
-  width: 100%;
-  height: auto;
-  min-height: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  nav li.nav-heading:first-child {
+    padding-top: 1em;
+  }
+  
+  nav li {
+    padding: 2em 0 2em 0;
+  }
+  
+  .contact-info {
+    margin: 13em 0 13em 2em;
+    padding: 0;
+    display: block;
+  }
+  
+  .contact-info h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+  
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-info li {
+    padding: 0.25em 0 0.25em 0;
+    margin: 0;
+  }
+  
+  .nav-heading {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 6em;
+  }
+  
+  .nav-option {
+    font-size: 5em;
+  }
+  
+  .contact-info h1 {
+    font-size: 4.5em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+  }
+  
+  .contact-info li { 
+    font-size: 3.5em;
+    font-weight: 200;
+  }
 }
