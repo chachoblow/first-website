@@ -7,75 +7,124 @@
     <meta name="desciption" content="The personal website of Wesley Klein.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/pixel-me.png">
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-brutal.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i,300,300i,400" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <div class="sidenav-wrapper">
-      <a class="nav-option title" href="index.html">Wesley<br/>Klein</a>
-      <nav class="sidenav">
-        <button class="dropdown-btn nav-option">artwork</button>
-        <div class="dropdown-container clicked">
-          <button class="dropdown-btn nav-option">comics</button>
-          <div class="dropdown-container">
-            <a class="nav-option" href="artwork/cyclux.html">cyclux</a>
-            <a class="nav-option" href="artwork/branches.html">branches</a>
-          </div>
-          <a class="nav-option" href="artwork/illustrations.html">illustrations</a>
-          <a class="nav-option" href="artwork/animations.html">animations</a>
-          <a class="nav-option" href="artwork/photo.html">photo</a>
-        </div>
-        <button class="dropdown-btn nav-option">projects</button>
-        <div class="dropdown-container">
-          <a class="nav-option" href="projects/virtual-fixtures.html">virtual<br/>fixtures</a>
-          <a class="nav-option" href="projects/neo.html">find neo</a>
-          <a class="nav-option" href="projects/linecollection.html">line<br/>collection</a>
-          <a class="nav-option" href="projects/lifesimulator.html">life<br/>simulator</a>
-          <a class="nav-option" href="projects/processing-sketches.html">processing<br/>sketches</a>
-        </div>
-        <a class="nav-option" href="blog.html">blog</a>
-        <a class="nav-option" href="about-me.html">about</a>
-      </nav>
+
+    <header>
       <a href="../index.html"><img id="title-image" src="../images/my-eyes-name-clear.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
-    </div>
+      <a class="nav-option" href="about.html">about</a>
 
-    <div class="topnav-wrapper">
-      <nav class="topnav">
-        <a href="index.html"><img id="title-image" src="../images/my-eyes-name-clear.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
-        <button class="dropdown-btn nav-option"><i class="fa fa-bars"></i></button>
-        <div class="dropdown-container main-dropdown">
-          <button class="dropdown-btn nav-option">artwork</button>
-          <div class="dropdown-container clicked">
-            <button class="dropdown-btn nav-option">comics</button>
-            <div class="dropdown-container">
-              <a class="nav-option" href="artwork/cyclux.html">cyclux</a>
-              <a class="nav-option" href="artwork/branches.html">branches</a>
-            </div>
-            <a class="nav-option" href="artwork/illustrations.html">illustrations</a>
-            <a class="nav-option" href="artwork/animations.html">animations</a>
-            <a class="nav-option" href="artwork/photo.html">photo</a>
-          </div>
-          <button class="dropdown-btn nav-option">projects</button>
-          <div class="dropdown-container">
-            <a class="nav-option" href="projects/virtual-fixtures.html">virtual<br/>fixtures</a>
-            <a class="nav-option" href="projects/neo.html">find neo</a>
-            <a class="nav-option" href="projects/linecollection.html">line collection</a>
-            <a class="nav-option" href="projects/lifesimulator.html">life simulator</a>
-            <a class="nav-option" href="projects/processing-sketches.html">processing sketches</a>
-          </div>
-          <a class="nav-option" href="blog.html">blog</a>
-          <a class="nav-option" href="about-me.html">about</a>
-        </div>
-      </nav>
-    </div>
-
-    <main role="main">
-      <div class="sketch-container" style="margin-left: 0 !important; width: 100vw;">
-        <iframe src="https://editor.p5js.org/chachoblow/embed/JQWbTPMBJ" frameborder="0"></iframe>
+      <div class="vertical-menu-info">
+        <h1 class="stretch">wesley klein</h1>
+        <h2 class="stretch">write code | make art | build stuff</h2>
       </div>
+    </header>
+
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <a class="nav-option" href="artwork/cyclux.html">
+              comics
+              <div class="nav-image-container">
+                <img class="nav-image" src="images/comics/cyclux/spread-1-1000.jpg"
+                  alt="First page of the comic 'cyclux'.">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="nav-option" href="artwork/illustrations.html">
+              illustrations
+              <div class="nav-image-container">
+                <img class="responsive-image" src="../images/illustrations/fried-1381h.jpg" 
+                  alt="Illustration of an older man taking a selfie.">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="nav-option" href="artwork/animations.html">
+              animations
+              <div class="nav-image-container">
+                <img class="nav-image" src="images/menu/animation-have-you.gif"
+                  alt="GIF of the line collection application.">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="nav-option" href="artwork/photo.html">
+              photo
+              <div class="nav-image-container">
+                <img class="nav-image" src="images/photographs/brittany-driving-1000h.JPG" 
+                  alt="Photograph of a woman driving on a highway.">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="nav-option" href="projects/virtual-fixtures.html">
+              virtual fixtures
+              <div class="nav-image-container">
+                  <img class="nav-image" src="images/virtual-fixtures/game-switch-worlds.gif" 
+                    alt="Gif of switching worlds in Virtual Fixtures" title="World switching in Virtual Fixtures">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="nav-option" href="projects/neo.html">
+              find neo
+              <div class="nav-image-container">
+                  <img class="project-media" src="images/neo/neo-action.gif" 
+                    alt="The app being used" title="NEO app being used.">es">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="nav-option" href="projects/linecollection.html">
+              line collection
+              <div class="nav-image-container">
+                <img class="nav-image" src="images/menu/line-collection.gif"
+                  alt="GIF of the line collection application.">
+              </div>
+            </a>
+          </li>
+          <!--
+          <li>
+            <a class="nav-option" href="projects/lifesimulator.html">life simulator</a>
+          </li>
+          -->
+          <li>
+            <a class="nav-option" href="projects/processing-sketches.html">
+              processing sketches
+              <div class="nav-image-container">
+                <img class="nav-image" src="images/menu/game-of-life.gif"
+                  alt="GIF of the line collection application.">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="contact-info">
+        <h1>Other websites</h1>
+        <ul>
+          <li>
+            <a href="https://github.com/chachoblow" title="My Github" class="content-option">Github</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/wesleyklein/" title="My Linkedin" class="content-option">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/chachoblow" title="My Instagram" class="content-option">Instagram</a>
+          </li>
+          <li>
+            <a href="images/resume.pdf" title="Download My Resume" class="content-option">Resume</a>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
-  <script src="js/dropdown.js"></script>
+  <script src="js/stretch.js"></script>
 </html>

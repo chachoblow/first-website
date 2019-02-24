@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10px;
+}
+
+a.nav-option, a.content-option{
+  text-decoration: none;
+  color: blue;
+  background-color: none;
+  font-weight: 300;
+}
+
+a.nav-option:hover, a.content-option:hover {
+  color: blue;
+  background-color: yellow;
+}
+
+header .nav-option {
+  font-size: 2em;
+  position: fixed;
+  top: 3em;
+  right: 3em;
+}
+
+#title-image {
+  height: 7em;
+  position: fixed;
+  bottom: 4em;
+  right: 4em;
+}
+
+main {
+  margin-left: 20em;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-menu-info {
+  writing-mode:vertical-rl;
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform:rotate(180deg);
+  transform: rotate(180deg);
+  position: fixed;
+  top: 0;
+  left: -6em;
+  height: 100vh;
+  padding: 2em 1em 2em 5em;
+}
+.stretch_it{ white-space: nowrap; }
+.justify{ text-align:justify; }
+
+.vertical-menu-info h1 {
+  font-size: 8em;
+  margin: 0;
+  font-weight: 400;
+  padding-left: 0.1em;
+}
+
+.vertical-menu-info h2 {
+  font-size: 2em;
+  margin: 0em 0 0em 0;
+  font-weight: 300;
+  padding-right: 0.3em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0em 0 2em 0;
+  font-size: 3em;
+}
+
+nav li {
+  padding: 0.5em 0 0.5em 0;
+}
+
+.contact-info {
+  margin: 0;
+  display: block;
+}
+
+.contact-info h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding:0;
+  font-size: 1.8em;
+}
+
+.contact-info li {
+  padding: 0.2em 0 0.2em 0;
+}
+
+a>div {
+  display: none;
+}
+
+a:hover>div {
+  display: block;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.nav-image-container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.nav-image {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
