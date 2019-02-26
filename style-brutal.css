@@ -10,6 +10,7 @@ html, body {
 html {
   /*font-family: 'Roboto Mono', monospace;*/
   font-family: 'Roboto', sans-serif;
+  font-family: 'Crimson Text', serif;
   font-size: 10px;
 }
 
@@ -60,13 +61,14 @@ header .nav-option {
   height: 100vh;
   width: 18.5em;
   padding: 1em .5em 1em 0em;
-  color: blue;
+  color: black;
 }
 .stretch_it{ white-space: nowrap; }
 .justify{ text-align:justify; }
 
 .vertical-menu-info h1 {
-  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;*/
   margin: 0;
   font-weight: 500;
   padding-left: 0.2em;
@@ -108,7 +110,8 @@ nav li {
 }
 
 .contact-info h1 {
-  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;*/
   font-weight: 600;
 
 }
@@ -125,12 +128,14 @@ nav li {
 }
 
 .nav-heading {
-  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;*/
   font-size: 6em;
+  display: none;
 }
 
 .nav-option {
-  font-size: 5.5em;
+  font-size: 2.5em;
 }
 
 .contact-info h1 {
@@ -146,6 +151,43 @@ nav li {
 
 a>div {
   display: none;
+}
+
+.project-container {
+  margin-right:20.5em;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10.25em;
+}
+
+.project-container>h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 7em;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.project-container>p {
+  font-size: 2em;
+}
+
+.project-container>p>a {
+  text-decoration: none;
+  color: blue;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.project-container>p>a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.project-media {
+  display: block;
+  width: 60%;
+  height: auto;
+  margin: 5em auto 5em auto;
+  border: 1px solid black;
+  box-shadow: 0em 0em 5em 0em blue;
 }
 
 /* Mobile/Tablet -----------------------------------------------------------------------*/
@@ -192,7 +234,8 @@ a>div {
     width: 10em;
     padding: 0.5em 0.1em 0.5em 0em;
     color: blue;
-  }
+}
+
   .stretch_it{ white-space: nowrap; }
   .justify{ text-align:justify; }
   

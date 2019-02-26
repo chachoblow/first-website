@@ -1,6 +1,6 @@
 $.fn.strech_text = function(){
   var elmt          = jQuery(this),
-      cont_width    = elmt.height();
+      cont_width    = elmt.width();
 
   //if ($( window ).width() < 850) {
   //    cont_width = elmt.width();
@@ -20,7 +20,7 @@ $.fn.strech_text = function(){
       txt_width;
   
   elmt.html(one_line);
-  txt_width = one_line.height();
+  txt_width = one_line.width();
   //if ($( window ).width() < 850) {
   //    txt_width = one_line.width();
   //}

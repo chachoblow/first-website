@@ -7,79 +7,61 @@
     <meta name="desciption" content="The personal website of Wesley Klein.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/pixel-me.png">
-    <link rel="stylesheet" href="style-brutal.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 
   <body>
 
-    <header>
-      <a href="../index.html"><img id="title-image" src="../images/my-eyes-name-clear.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
-      <a class="nav-option" href="about.html">about</a>
+    <div id="page-wrapper">
 
-      <div class="vertical-menu-info">
-        <h1 class="stretch">wesley klein.</h1>
-        <h2 class="stretch">write code | build stuff | make art</h2>
-      </div>
-    </header>
+      <div id="image-wrapper"></div>
 
-    <main>
-      <nav>
-        <ul>
-          <li class="nav-heading">Artwork</li>
-          <li>
-            <a onmouseover="changeBackground('images/comics/branches/branches-page06.png')" onmouseout="whiteBackground()" class="nav-option" href="artwork/cyclux.html">comics</a>
-          </li>
-          <li>
-            <a onmouseover="changeBackground('images/illustrations/can-you-hear-me-1800h.jpg')" onmouseout="whiteBackground()" class="nav-option" href="artwork/illustrations.html">illustrations</a>
-          </li>
-          <li>
-            <a onmouseover="changeBackground('images/menu/animation-have-you.gif')" onmouseout="whiteBackground()" class="nav-option" href="artwork/animations.html">animations</a>
-          </li>
-          <li>
-            <a onmouseover="changeBackground('images/photographs/megan-dad-2-1000h.JPG')" onmouseout="whiteBackground()" class="nav-option" href="artwork/photo.html">photo</a>
-          </li>
-          <li class="nav-heading">Code</li>
-          <li>
-            <a onmouseover="changeBackground('images/virtual-fixtures/game-switch-worlds.gif')" onmouseout="whiteBackground()" class="nav-option" href="projects/virtual-fixtures.html">virtual fixtures</a>
-          </li>
-          <li>
-            <a onmouseover="changeBackground('images/neo/neo-action.gif')" onmouseout="whiteBackground()" class="nav-option" href="projects/neo.html">find neo</a>
-          </li>
-          <li>
-            <a onmouseover="changeBackground('images/menu/line-collection.gif')" onmouseout="whiteBackground()" class="nav-option" href="projects/linecollection.html">line collection</a>
-          </li>
-          <!--
-          <li>
-            <a class="nav-option" href="projects/lifesimulator.html">life simulator</a>
-          </li>
-          -->
-          <li>
-            <a onmouseover="changeBackground('images/menu/game-of-life.gif')" onmouseout="whiteBackground()" class="nav-option" href="projects/processing-sketches.html">processing sketches</a>
-          </li>
-        </ul>
-      </nav>
+      <header>
 
-      <section class="contact-info">
-        <h1>Other websites</h1>
-        <ul>
-          <li>
-            <a href="https://github.com/chachoblow" title="My Github" class="content-option">Github</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/wesleyklein/" title="My Linkedin" class="content-option">LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/chachoblow" title="My Instagram" class="content-option">Instagram</a>
-          </li>
-          <li>
-            <a href="images/resume.pdf" title="Download My Resume" class="content-option">Resume</a>
-          </li>
-        </ul>
-      </section>
-    </main>
+        <a href="../index.html"><img id="title-image" src="../images/my-eyes-name-clear.png" alt="Website Logo: A pair of drawn eyes with the name 'Wesley Klein' in them."></a>
+        <a id="about" href="about-me.html">About</a>
+
+      </header>
+
+      <main>
+
+        <nav>
+          <ol>
+            <li>
+              <a onmouseover="changeBackground('images/menu/comics-invert.jpg')" onmouseout="whiteBackground()" class="nav-option" href="artwork/cyclux.html">Comics</a>
+            </li>
+            <li>
+              <a onmouseover="changeBackground('images/menu/illustrations-invert.jpg')" onmouseout="whiteBackground()" class="nav-option" href="artwork/illustrations.html">Illustrations</a>
+            </li>
+            <li>
+              <a onmouseover="changeBackground('images/menu/animation-invert.jpg')" onmouseout="whiteBackground()" class="nav-option" href="artwork/animations.html">Animations</a>
+            </li>
+            <li>
+              <a onmouseover="changeBackground('images/menu/photo-invert.jpg')" onmouseout="whiteBackground()" class="nav-option" href="artwork/photo.html">Photo</a>
+            </li>
+            <li>
+              <a onmouseover="changeBackground('images/menu/virtual-fixtures-invert.jpg')" onmouseout="whiteBackground()" class="nav-option" href="projects/virtual-fixtures.html">Virtual Fixtures</a>
+            </li>
+            <li>
+              <a onmouseover="changeBackground('images/menu/find-neo-invert.jpg')" onmouseout="whiteBackground()" class="nav-option" href="projects/neo.html">Find NEO</a>
+            </li>
+            <li>
+              <a onmouseover="changeBackground('images/menu/line-collection-invert.jpg')" onmouseout="whiteBackground()" class="nav-option" href="projects/linecollection.html">Line Collection</a>
+            </li>
+            <li>
+              <a onmouseover="changeBackground('images/menu/processing-sketches-invert.jpg')" onmouseout="whiteBackground()" class="nav-option" href="projects/processing-sketches.html">Processing Sketches</a>
+            </li>
+          </ol>
+        </nav>
+
+      </main>
+
+    </div> 
+
   </body>
-  <script src="js/stretch.js"></script>
+
   <script src="js/menu-images-fade.js"></script>
+
 </html>
