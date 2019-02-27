@@ -16,7 +16,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
   min-height: 100vh;
   
   background-image: url('images/menu/slit-scan.jpg');
@@ -42,6 +42,7 @@ html, body {
   background-attachment: fixed;
   background-size: auto 70vh;
   mix-blend-mode: difference;
+  z-index: -1;
 }
 
 header {
@@ -84,7 +85,7 @@ main {
 
 nav {
   margin: auto;
-  padding: 0;
+  padding: 75px 0 75px 0;
   align-items: center;
 }
 
@@ -121,6 +122,73 @@ a.nav-option:hover {
   text-decoration: line-through;
   text-decoration-color: gold;
 }
+
+.gallery {
+  height: 100%;
+  width: 100%;
+  padding: 75px 75px 10px 75px;
+  white-space: nowrap;
+}
+
+.gallery-image {
+  display: inline-block;
+  height: 100%;
+  max-height: 90vh;
+  width: auto;
+  padding: 10px 50px 10px 50px; 
+}
+
+iframe {
+  height: 80vh;
+  width: 80vw;
+}
+
+main.project-wrapper {
+  display: inline-block;
+  padding: 75px 5% 0 5%;
+}
+
+.project-content-wrapper {
+  width: 40%;
+  padding: 0 20px 50px 20px;
+  float: left;
+  font-size: 2em;
+}
+
+.project-content-wrapper>p {
+  text-transform: none;
+}
+
+.project-content-wrapper>p>a {
+  color: black;
+}
+
+.project-content-wrapper>p>a:visited {
+  text-decoration: line-through;
+  text-decoration-color: gold;
+}
+
+.project-content-wrapper>p>a:hover {
+  text-decoration: line-through;
+  text-decoration-color: gold;
+}
+
+.project-media-wrapper {
+  width: 60%;
+  padding: 0 20px 50px 20px;
+  float: right;
+}
+
+.project-media {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
 
 /* Mobile/Tablet -----------------------------------------------------------------------*/
 

@@ -6,33 +6,52 @@
     <meta name="author" content="Wesley Klein">
     <meta name="desciption" content="The personal website of Wesley Klein.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/pixel-me.png">
-    <link rel="stylesheet" href="../style-brutal.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="shortcut icon" href="images/pixel-me.png">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 
   <body>
 
-    <header>
-      <a class="nav-option" href="../index.html">back</a>
+    <div id="page-wrapper" style="background-image: none;">
 
-      <div class="vertical-menu-info">
-        <h1 class="stretch">find neo.</h1>
-        <h2 class="stretch">NASA Open API // Near Earth Object Web Service // JavaScript</h2>
-      </div>
-    </header>
+      <div id="image-wrapper"></div>
 
-    <main>
-      <div class="project-container">
-        <h1>Find Near-Earth Objects (NEO)</h1>
-        <p>This application allows you to search for near-Earth objects on a specific day. It uses the NeoWs (<a href="https://api.nasa.gov/api.html#NeoWS" title="Page for the NeoWs API)" target="_blank">Near Earth Object Web Service</a>) to access the data about all near-Earth objects on the desired day. A GIF of the application can be seen below. You can try it for yourself <a href="../neo-app.html" target="_blank" title="The NEO application">here</a>.</p>
-        <img class="project-media" src="../images/neo/neo-action.gif" alt="The app being used" title="NEO app being used.">
-      </div>
-    </main>
+      <header>
+
+        <a href="../index.html">< Back</a>
+        <a href="../about-me.html">About</a>
+
+      </header>
+
+      <main class="project-wrapper">
+
+        <div class="project-content-wrapper">
+          <h1>Find Near-Earth Objects (NEO)</h1>
+          <p>This application allows you to search for near-Earth objects on a specific day. It uses the NeoWs (<a href="https://api.nasa.gov/api.html#NeoWS" title="Page for the NeoWs API" target="_blank">Near Earth Object Web Service</a>) to access the data about all near-Earth objects on the desired day. A GIF of the application can be seen below. You can try it for yourself <a href="../neo-app.html" target="_blank" title="The NEO application">here</a>.</p>
+        </div>
+
+        <div class="project-media-wrapper">
+          <img class="project-media" src="../images/neo/neo-action.gif" alt="The app being used" title="NEO app being used.">
+        </div>
+
+      </main>
+
+    </div> 
+
   </body>
-  <script src="../js/stretch.js"></script>
+
+  <script src="../js/menu-images-fade.js"></script>
+
 </html>
 
 
-</html>
+
+
+
+
+
+
+
+

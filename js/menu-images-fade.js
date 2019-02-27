@@ -9,5 +9,5 @@ function whiteBackground(x) {
   let wrapper = document.getElementById('image-wrapper');
   wrapper.style.backgroundImage = 'none';
   let page_wrapper = document.getElementById('page-wrapper');
-  page_wrapper.style.backgroundImage = "url('images/menu/slit-scan.jpg')";
+  page_wrapper.style.backgroundImage = 'url(' + x + ')';
 }
