@@ -125,7 +125,6 @@ a.nav-option:hover {
 
 .gallery {
   height: 100%;
-  width: 100%;
   padding: 75px 75px 10px 75px;
   white-space: nowrap;
 }
@@ -134,12 +133,17 @@ a.nav-option:hover {
   display: inline-block;
   height: 100%;
   max-height: 90vh;
-  width: auto;
-  padding: 10px 50px 10px 50px; 
+  padding: 10px 50px 10px 50px;
+}
+
+.gif {
+  width: 100%;
+  max-width: 500px !important;
+  height: auto !important;
 }
 
 iframe {
-  height: 80vh;
+  height: 90vh;
   width: 80vw;
 }
 
@@ -163,11 +167,6 @@ main.project-wrapper {
   color: black;
 }
 
-.project-content-wrapper>p>a:visited {
-  text-decoration: line-through;
-  text-decoration-color: gold;
-}
-
 .project-content-wrapper>p>a:hover {
   text-decoration: line-through;
   text-decoration-color: gold;
@@ -186,6 +185,65 @@ main.project-wrapper {
   padding-bottom: 20px;
 }
 
+#link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 2em;  
+  font-weight: 300;
+}
+
+#link-container>a {
+  text-decoration: none;
+  color: black;
+}
+
+#link-container>a:hover {
+  text-decoration: line-through;
+  text-decoration-color: gold;
+}
+
+#about {
+  width: 40vh;
+  min-width: 600px;
+  margin: auto;
+}
+
+.about-content {
+  padding-top: 75px;
+  padding-bottom: 200px;
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.about-content ol {
+  list-style: none;
+  counter-reset: about-counter;
+  padding: 0;
+  margin: 0;
+}
+
+.about-content ol li:first-of-type {
+  font-size: 5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-content ol li {
+  counter-increment: about-counter;
+  font-size: 3em;
+  text-transform: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+.about-content ol li::before {
+  font-family: 'IBM Plex Mono', monospace;
+  content: counter(about-counter) ". ";
+  color: white;
+  font-weight: 200;
+  font-size: 14px;
+}
 
 
 
