@@ -49,6 +49,38 @@ body.horizontal-scroll {
   z-index: -1;
 }
 
+#header-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em 0 0 1em;
+
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 2em;
+  color: black;
+
+  z-index: 100;
+}
+
+#header-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1em 1em 0 0;
+
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 2em;
+  color: black;
+  z-index: 100;
+}
+
+#header-left:hover, #header-right:hover {
+  text-decoration: line-through;
+  text-decoration-color: gold;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -193,7 +225,7 @@ main.project-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  font-size: 2em;  
+  font-size: 1em !important;  
   font-weight: 300;
 }
 
@@ -283,8 +315,8 @@ main.project-wrapper {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   
     background-position: center;
     background-repeat: no-repeat;
@@ -294,6 +326,7 @@ main.project-wrapper {
     z-index: -1;
   }
   
+  /*
   header {
     position: fixed;
     top: 0;
@@ -307,11 +340,13 @@ main.project-wrapper {
     padding: 2em 3em 0em 3em;
     color: white;
   }
+  */
   
   #title-image {
     height: 3em;
   }
   
+  /*
   header>a {
     text-decoration: none;
     font-weight: 300;
@@ -323,6 +358,31 @@ main.project-wrapper {
   header>a:hover {
     text-decoration: line-through;
     text-decoration-color: gold;
+  }
+  */
+
+  #header-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em 0 0 1em;
+
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 2em;
+    color: black;
+  }
+
+  #header-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1em 1em 0 0;
+
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 2em;
+    color: black;
   }
   
   main {
@@ -506,7 +566,7 @@ main.project-wrapper {
  */
  
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
 
   body.horizontal-scroll {
     overflow-y: scroll; /**/
@@ -545,35 +605,35 @@ main.project-wrapper {
     z-index: -1;
   }
   
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px; /**/
-    display: flex;
-    justify-content: space-between;
-  
-    margin: 0;
-    padding: 1em 1em 0em 1em; /**/
-    color: white;
-  }
-  
   #title-image {
     height: 2em; /**/
   }
-  
-  header>a {
+
+  #header-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em 0 0 1em;
+
     text-decoration: none;
     font-weight: 300;
-    font-size: 1.5em; /**/
+    font-size: 1.5em;
     color: black;
-    mix-blend-mode: difference;
+
+    z-index: 100;
   }
-  
-  header>a:hover {
-    text-decoration: line-through;
-    text-decoration-color: gold;
+
+  #header-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1em 1em 0 0;
+
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: black;
+    z-index: 100;
   }
   
   main {
