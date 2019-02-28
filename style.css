@@ -12,6 +12,10 @@ html, body {
   padding: 0;
 }
 
+body.horizontal-scroll {
+  overflow-y: hidden;
+}
+
 #page-wrapper {
   position: absolute;
   top: 0;
@@ -245,11 +249,505 @@ main.project-wrapper {
   font-size: 14px;
 }
 
+/* Tablet -----------------------------------------------------------------------*/
+
+/* Changes are marked with an empty comment. I am still fiddling with the style, so I have
+ * copied all stylings from above.
+ */
+
+@media screen and (max-width: 1024px) {
+
+  body.horizontal-scroll {
+    overflow-y: scroll; /**/
+  }
+
+  #page-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    
+    background-image: url('images/menu/slit-scan.jpg');
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 90vw auto; /**/
+    
+    z-index: -2;
+    text-transform: uppercase;
+  }
+  
+  #image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 90vw auto; /**/
+    mix-blend-mode: difference;
+    z-index: -1;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+  
+    margin: 0;
+    padding: 2em 3em 0em 3em;
+    color: white;
+  }
+  
+  #title-image {
+    height: 3em;
+  }
+  
+  header>a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 2em;
+    color: black;
+    mix-blend-mode: difference;
+  }
+  
+  header>a:hover {
+    text-decoration: line-through;
+    text-decoration-color: gold;
+  }
+  
+  main {
+    padding-top: 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  nav {
+    margin: auto;
+    padding: 75px 0 75px 0;
+    align-items: center;
+  }
+  
+  nav ol {
+    list-style: none;
+    counter-reset: counter;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ol li {
+    counter-increment: counter;
+    font-size: 4em; /**/
+    font-weight: 600;
+    margin: 0;
+    padding: 0.2em 0 0.2em 0;
+  }
+  
+  nav ol li::before {
+    font-family: 'IBM Plex Mono', monospace;
+    content: counter(counter) ". ";
+    color: black;
+    font-weight: 200;
+    font-size: 0.25em;
+  }
+  
+  a.nav-option {
+    text-decoration: none;
+    color: white;
+    mix-blend-mode: difference;
+  }
+  
+  a.nav-option:hover {
+    text-decoration: line-through;
+    text-decoration-color: gold;
+  }
+  
+  .gallery {
+    height: 100%;
+    width: 100%; /**/
+    padding: 75px 10px 75px 10px; /**/
+    white-space: normal; /**/
+  }
+  
+  .gallery-image {
+    display: block; /**/
+    max-width: 100%; /**/
+    height: auto; /**/
+    margin: auto; /**/
+    padding: 10px 0px 10px 0px; /**/
+  }
+  
+  iframe {
+    height: 40vh; /**/
+    width: 100%; /**/
+  }
+  
+  main.project-wrapper {
+    display: inline-block;
+    padding: 75px 10px 0 10px;
+  }
+  
+  .project-content-wrapper {
+    width: 40%;
+    padding: 0 10px 50px 10px; /**/
+    float: left;
+    font-size: 2em;
+  }
+  
+  .project-content-wrapper>p {
+    text-transform: none;
+  }
+  
+  .project-content-wrapper>p>a {
+    color: black;
+  }
+  
+  .project-content-wrapper>p>a:hover {
+    text-decoration: line-through;
+    text-decoration-color: gold;
+  }
+  
+  .project-media-wrapper {
+    width: 60%;
+    padding: 0 10px 50px 10px; /**/
+    float: right;
+  }
+  
+  .project-media {
+    width: 100%;
+    height: auto;
+    padding-top: 10px; /**/
+    padding-bottom: 10px; /**/
+  }
+
+  .gif {
+    width: 100%;
+    max-width: 500px !important;
+    height: auto !important;
+  }
+  
+  #link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 2em;  
+    font-weight: 300;
+  }
+  
+  #link-container>a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #link-container>a:hover {
+    text-decoration: line-through;
+    text-decoration-color: gold;
+  }
+  
+  #about {
+    margin: auto;
+  }
+  
+  .about-content {
+    width: 60vw;
+    min-width: 400px; /**/
+    margin: auto; /**/
+    padding-top: 150px; /**/
+    padding-bottom: 200px;
+    mix-blend-mode: difference;
+    color: white;
+  }
+  
+  .about-content ol {
+    list-style: none;
+    counter-reset: about-counter;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-content ol li:first-of-type {
+    font-size: 4.5em; /**/
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .about-content ol li {
+    counter-increment: about-counter;
+    font-size: 3em;
+    text-transform: none;
+    margin: 0;
+    padding: 10px 0 10px 0;
+  }
+  
+  .about-content ol li::before {
+    font-family: 'IBM Plex Mono', monospace;
+    content: counter(about-counter) ". ";
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+  }
+}
 
 
+/* Mobile -----------------------------------------------------------------------*/
 
-/* Mobile/Tablet -----------------------------------------------------------------------*/
+/* Changes are marked with an empty comment. I am still fiddling with the style, so I have
+ * copied all stylings from above.
+ */
+ 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
 
+  body.horizontal-scroll {
+    overflow-y: scroll; /**/
+  }
+
+  #page-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    
+    background-image: url('images/menu/slit-scan.jpg');
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw auto; /**/
+    
+    z-index: -2;
+    text-transform: uppercase;
+  }
+  
+  #image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw auto; /**/
+    mix-blend-mode: difference;
+    z-index: -1;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /**/
+    display: flex;
+    justify-content: space-between;
+  
+    margin: 0;
+    padding: 1em 1em 0em 1em; /**/
+    color: white;
+  }
+  
+  #title-image {
+    height: 2em; /**/
+  }
+  
+  header>a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.5em; /**/
+    color: black;
+    mix-blend-mode: difference;
+  }
+  
+  header>a:hover {
+    text-decoration: line-through;
+    text-decoration-color: gold;
+  }
+  
+  main {
+    padding-top: 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  nav {
+    margin: auto;
+    padding: 50px 0 50px 0; /**/
+    align-items: center;
+  }
+  
+  nav ol {
+    list-style: none;
+    counter-reset: counter;
+    padding: 0 10px 0 10px;
+    margin: 0;
+  }
+  
+  nav ol li {
+    counter-increment: counter;
+    font-size: 3em; /**/
+    font-weight: 600;
+    margin: 0;
+    padding: 0.2em 0 0.2em 0;
+  }
+  
+  nav ol li::before {
+    font-family: 'IBM Plex Mono', monospace;
+    content: counter(counter) ". ";
+    color: black;
+    font-weight: 200;
+    font-size: 0.25em;
+  }
+  
+  a.nav-option {
+    text-decoration: none;
+    color: white;
+    mix-blend-mode: difference;
+  }
+  
+  a.nav-option:hover {
+    text-decoration: line-through;
+    text-decoration-color: gold;
+  }
+  
+  .gallery {
+    height: 100%;
+    width: 100%; /**/
+    padding: 50px 0px 50px 0px; /**/
+    white-space: normal; /**/
+  }
+  
+  .gallery-image {
+    display: block; /**/
+    max-width: 100%; /**/
+    height: auto; /**/
+    margin: auto; /**/
+    padding: 10px 0px 10px 0px; /**/
+  }
+  
+  iframe {
+    height: auto; /**/
+    width: 100%; /**/
+  }
+  
+  main.project-wrapper {
+    display: block;
+    padding: 20px 0 0 0; /**/
+  }
+  
+  .project-content-wrapper {
+    width: 100%;
+    padding: 0 10px 0px 10px; /**/
+    float: left;
+    font-size: 2em;
+  }
+  
+  .project-content-wrapper>p {
+    text-transform: none;
+  }
+  
+  .project-content-wrapper>p>a {
+    color: black;
+  }
+  
+  .project-content-wrapper>p>a:hover {
+    text-decoration: line-through;
+    text-decoration-color: gold;
+  }
+  
+  .project-media-wrapper {
+    width: 100%;
+    padding: 0 10px 50px 10px; /**/
+    float: right;
+  }
+  
+  .project-media {
+    width: 100%;
+    height: auto;
+    padding-top: 10px; /**/
+    padding-bottom: 10px; /**/
+  }
+
+  .gif {
+    width: 100%;
+    max-width: 500px !important;
+    height: auto !important;
+  }
+  
+  #link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.5em;  
+    font-weight: 300;
+  }
+  
+  #link-container>a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #link-container>a:hover {
+    text-decoration: line-through;
+    text-decoration-color: gold;
+  }
+  
+  #about {
+    width: 100vw; /**/
+    min-width: 100vw; /**/
+    margin: auto;
+  }
+  
+  .about-content {
+    width: 100vw; /**/
+    min-width: 100vw; /**/
+    max-width: 100vw; /**/
+    margin: auto; /**/
+    padding: 90px 10px 50px 10px; /**/
+    mix-blend-mode: difference;
+    color: white;
+    z-index: -1;
+  }
+  
+  .about-content ol {
+    list-style: none;
+    counter-reset: about-counter;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-content ol li:first-of-type {
+    font-size: 3.5em; /**/
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .about-content ol li {
+    counter-increment: about-counter;
+    font-size: 2em;
+    text-transform: none;
+    margin: 0;
+    padding: 10px 0 10px 0;
+  }
+  
+  .about-content ol li::before {
+    font-family: 'IBM Plex Mono', monospace;
+    content: counter(about-counter) ". ";
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+  }
 }
